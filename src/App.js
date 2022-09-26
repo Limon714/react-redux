@@ -1,23 +1,18 @@
-import React, { useRef } from 'react'
-import ForwardRef from './Imperative/ForwardRef'
-
+import React,{useRef} from 'react'
+import Indexi from './Imperative/Indexi'
 const App = () => {
-  const InputRef = useRef(null);
-  
- const UpdateInput = () => {
-    InputRef.current.value = "1000";
-    InputRef.current.style.color = "blue";
-    InputRef.current.style.backgroundColor = "yellow";
-    InputRef.current.style.textAlign = "center";
-    InputRef.current.style.padding = "20px";
-    InputRef.current.focus();
+  const heyRef = useRef(null);
+  const AddCounter = () => {
+    heyRef.current.yell()
   }
-
   return (
-    <div>
-      <ForwardRef ref={InputRef} />
-      <button onClick={UpdateInput}>Update Input Field</button>
-    </div>
+    <>
+
+      <div>
+        <Indexi ref= {heyRef} />
+        <button onClick={AddCounter}>Get The Number</button>
+</div>
+    </>
   )
 }
 
