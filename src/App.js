@@ -1,21 +1,23 @@
-import React from 'react'
-import { BrowserRouter,Routes, Route } from "react-router-dom";
-import Home from './Routerdom/Home';
-import About from './Routerdom/About';
-import Navbar from './Routerdom/Navbar';
+import React, { useRef } from 'react'
+import ForwardRef from './Imperative/ForwardRef'
+
 const App = () => {
+  const InputRef = useRef(null);
+  
+ const UpdateInput = () => {
+    InputRef.current.value = "1000";
+    InputRef.current.style.color = "blue";
+    InputRef.current.style.backgroundColor = "yellow";
+    InputRef.current.style.textAlign = "center";
+    InputRef.current.style.padding = "20px";
+    InputRef.current.focus();
+  }
+
   return (
-    <>
-      <div>
-        <BrowserRouter>
-          <Navbar/>
-          <Routes>
-            <Route path="/" element={ <Home/> }  />
-            <Route path="/about" element={ <About/> }  />
-        </Routes>
-        </BrowserRouter>
-      </div>
-    </>
+    <div>
+      <ForwardRef ref={InputRef} />
+      <button onClick={UpdateInput}>Update Input Field</button>
+    </div>
   )
 }
 
