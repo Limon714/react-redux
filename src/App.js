@@ -11,7 +11,7 @@ const App = () => {
       <div>
         <Indexi ref= {heyRef} />
         <button onClick={AddCounter}>Get The Number</button>
-</div>
+      </div>
     </>
   )
 }
