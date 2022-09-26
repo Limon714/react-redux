@@ -1,11 +1,19 @@
 import React from 'react'
-import User from './User'
+import { BrowserRouter,Routes, Route } from "react-router-dom";
+import Home from './Routerdom/Home';
+import About from './Routerdom/About';
+import Navbar from './Routerdom/Navbar';
 const App = () => {
   return (
     <>
       <div>
-        <h1>React Redux Running !!</h1>
-        <User data={{name:'Limon', age:25}} />
+        <BrowserRouter>
+          <Navbar/>
+          <Routes>
+            <Route path="/" element={ <Home/> }  />
+            <Route path="/about" element={ <About/> }  />
+        </Routes>
+        </BrowserRouter>
       </div>
     </>
   )
