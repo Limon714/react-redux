@@ -6,11 +6,11 @@ const Home = () => {
       <div>
         <h1>This is Home Page</h1>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis
+          Lorem ipsum dolor sit,amet consectetur adipisicing elit. Perferendis
           eveniet ab tenetur quo illum id necessitatibus distinctio vel iste
           pariatur.
               </p>
-              <Link to ="/about">Visit our About Page</Link>
+              <Link to ="/about"> Visit our About Page</Link>
       </div>
     </>
   );
