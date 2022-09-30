@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 const About = () => {
   return (
     <>
@@ -10,7 +10,9 @@ const About = () => {
           eveniet ab tenetur quo illum id necessitatibus distinctio vel iste
           pariatur.
         </p>
-        <NavLink to="/" className= 'link'>Visit our Home Page</NavLink>
+        
+        <Link to="blog"  > <span>Blog Page</span></Link>
+        <Outlet/>
       </div>
     </>
   );
