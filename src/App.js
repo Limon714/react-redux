@@ -8,6 +8,8 @@ import Contact from "./Routerdom/Contact";
 import Company from "./Routerdom/NestedRouting/Company";
 import Channel from "./Routerdom/NestedRouting/Channel";
 import Blog from "./Routerdom/NestedRouting/Blog";
+import Login from "./Routerdom/Login";
+import Protected from "./Routerdom/Protected";
 const App = () => {
   return (
     <>
@@ -15,10 +17,11 @@ const App = () => {
         <BrowserRouter>
           <Navbar />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about/" element={<About />}>
-              <Route path="blog" element={<Blog />} />
-            </Route>
+            <Route path="/login" element={<Login />} />
+            <Route path="/" element={<Protected Component={Home} />} />
+            <Route path="/about" element={<Protected Component={About} />} />
+              {/* <Route path="blog" element={<Blog />} /> */}
+            {/* </Route> */}
             <Route path="/contact/" element={<Contact />}>
               <Route path="company" element={<Company />} />
               <Route path="channel" element={<Channel />} />

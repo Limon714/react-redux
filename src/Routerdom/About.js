@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link, Outlet } from "react-router-dom";
 const About = () => {
   return (
     <>
@@ -11,8 +10,8 @@ const About = () => {
           pariatur.
         </p>
         
-        <Link to="blog"  > <span>Blog Page</span></Link>
-        <Outlet/>
+        {/* <Link to="blog"  > <span>Blog Page</span></Link> */}
+        {/* <Outlet/> */}
       </div>
     </>
   );

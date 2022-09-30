@@ -10,7 +10,7 @@ const Home = () => {
           eveniet ab tenetur quo illum id necessitatibus distinctio vel iste
           pariatur.
               </p>
-              <NavLink to ="/about" className= 'link'> Visit our About Page</NavLink>
+              <NavLink to ="/about" className= 'linkk'> Visit our About Page</NavLink>
       </div>
     </>
   );

@@ -2,7 +2,7 @@ body{
     background-color: #333;
     color: rgb(255, 255, 255);
     display: flex;
-    height: 100vh;
+    height: 50vh;
     align-items: center;
     justify-content: center;
 }
@@ -17,6 +17,16 @@ body{
     font-size: 20px;
     font-weight: bold;
 }
+.linkk{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(196, 148, 17);
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+
 .linkt{
     text-decoration: none;
     list-style: none;
@@ -52,6 +62,7 @@ cursor: pointer;
 
 button{
     padding: 10px;
+    margin-left: 30px;
 }
 span{
     font-size: 18px;
@@ -72,4 +83,13 @@ Link{
 h2{
     margin-top: 50px;
     margin-left: 50px;
+}
+input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    margin-left: 30px;
+}
+h1, p{
+    margin-left: 20px;
 }
