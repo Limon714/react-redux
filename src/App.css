@@ -1,0 +1,75 @@
+body{
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 450px;
+}
+.link{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(196, 148, 17);
+    font-size: 20px;
+    font-weight: bold;
+}
+.linkt{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(196, 148, 17);
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    padding: 10px 50px;
+    background: rgb(211, 219, 191);
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+ul > li{
+margin-left: -20px;
+display: inline-block;
+padding: 10px 50px;
+background: rgb(211, 219, 191);
+cursor: pointer;
+
+}
+ul>li:hover{
+background: #000;
+color: aliceblue;
+cursor: pointer;
+}
+.linkt:hover{
+background: #000;
+color: aliceblue;
+cursor: pointer;
+}
+
+button{
+    padding: 10px;
+}
+span{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+    color: aliceblue;
+    width: 100px;
+    text-decoration: none;
+    list-style: none;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+}
+Link{
+    list-style: none;
+    text-decoration: none;
+}
+
+h2{
+    margin-top: 50px;
+    margin-left: 50px;
+}
