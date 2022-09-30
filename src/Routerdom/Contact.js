@@ -10,6 +10,7 @@ const Contact = () => {
           eveniet ab tenetur quo illum id necessitatibus distinctio vel iste
           pariatur.
         </p>
+    // Nested Routing
         <Link to="company"  > <span>Company Page </span> </Link>
         <Link to="channel"  > <span>Channel Page</span></Link>
         <Link to="blog"  > <span>Blog Page</span></Link>
