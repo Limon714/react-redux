@@ -17,7 +17,7 @@ const Login = () => {
   return (
     <>
       <div>
-        <h1> This is Your Login Page</h1>
+        <h1> Welcome to Login Page</h1>
         <br />
         <input type="text" placeholder="Enter your Name" />
         <br />
